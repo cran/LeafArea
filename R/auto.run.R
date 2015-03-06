@@ -3,11 +3,26 @@ auto.run <- function(path.imagej = NULL, set.memory = 8, set.directory, distance
 circ.arg <- paste(low.circ,upper.circ,sep="-")
 size.arg <- paste(low.size,upper.size,sep="-")
 
+
+
 os<-.Platform$OS.type
 if (is.null(path.imagej)==T){
 imagej <- findimagej(ostype = .Platform$OS.type)
-if(imagej=="ImageJ not found") stop("ImageJ not found") else path.imagej <- imagej
+if(imagej=="ImageJ not found") return("ImageJ not found") else path.imagej <- imagej
 }
+
+
+##additional check
+if (os=="windows"){
+	if(file.exists(paste(path.imagej,"ImageJ.exe",sep=""))!=T) {warning("Specify the correct path to ImageJ")
+			return("ImageJ not found")}
+} else {
+	unix.check <-Sys.info()["sysname"]
+		if(unix.check=="Linux") look <- "ImageJ" else look <- "ImageJ64.app"
+	if(file.exists(paste(path.imagej,look,sep=""))!=T) {warning("Specify the correct path to ImageJ")
+			return("ImageJ not found")}
+}
+
 
 if (os == "windows"){temp<-paste(tempdir(),"\\",sep="")
 temp <-gsub("\\\\","\\\\\\\\",temp)} else {temp<-paste(tempdir(),"/",sep="")

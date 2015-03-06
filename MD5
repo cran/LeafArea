@@ -1,10 +1,10 @@
-6ef1f65f93f10fb915b85ae91e02e85c *DESCRIPTION
+0ebf6a48ecbf74251e6511f6c20b0e62 *DESCRIPTION
 6a02058e1e0cb6e806788ec193899765 *NAMESPACE
-a979c1b79b7bf689e2412335693aecaf *R/auto.run.R
+841bc173ae2c7f0c27e19b2f43bb8980 *R/auto.run.R
 93a6addf90bb86ed84fb1a209f68bbf2 *R/eximg.r
 62f348f673a78dfb5171a989db5f4c6e *R/file.manage.R
 95ed33056b0d2b54cbf87b599bcf5530 *R/file.manage.list.R
-7870a6333af7b39dce9ffe016ca122ba *R/findimagej.R
+fdc0068b2b18da55754f0ca9288dc981 *R/findimagej.R
 492509e76808440eb6bbabcaa7a13262 *data/leafdata.RData
 c8c1237e9480e4829c5edd7f5644197a *inst/images/A1-01.jpeg
 82e1a713a2c0814ce37ae468a79ee704 *inst/images/A1-02.jpeg
@@ -13,8 +13,8 @@ f29320df5c88f787de13fba026715e9f *inst/images/A123-02.jpeg
 5a4fe28260ba46ec0382af1db9b46252 *inst/images/A2.jpeg
 70255993e1cdcabeb4d686c16558564a *inst/images/A300-1.jpeg
 4a37f0152a1ba7ac9b99e8d5a4bc58d9 *inst/images/A300-2.jpeg
-ca48f5cbebc69b1e5a542b65f37cce88 *man/LeafArea-package.Rd
-c199eec6eea6fd8b607f6a35cbf2b00c *man/auto.run.Rd
+50b832887f1a15e2badbbc20981e987f *man/LeafArea-package.Rd
+3c8f06b1174e1526b71827f4f503fa8f *man/auto.run.Rd
 e25ab95a36ae59471b7fed5418b0c517 *man/eximg.Rd
 f0f157677a7f26719af6e9bef9af0406 *man/file.manage.Rd
 c17ed2896fd00f6f810d703bc36409ef *man/file.manage.list.Rd

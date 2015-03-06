@@ -12,8 +12,8 @@ The package LeafArea allows one to conveniently run IMAGEJ software within R. Fu
 \tabular{ll}{
 Package: \tab LeafArea\cr
 Type: \tab Package\cr
-Version: \tab 0.0.5\cr
-Date: \tab 2015-02-02\cr
+Version: \tab 0.0.6\cr
+Date: \tab 2015-03-06\cr
 License: \tab GPL-2\cr
 }
 }

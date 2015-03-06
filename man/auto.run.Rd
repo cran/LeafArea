@@ -75,14 +75,13 @@ Masatoshi Katabuchi <mattocci27@gmail.com>}
 \code{\link{eximg}} 
 }
 \examples{
-# As long as ImageJ application is installed in the follwoing directory,
+# As long as ImageJ application is installed in the following directory,
 # you do not have to specify the path to ImageJ
 # /Applications/ImageJ/ <Mac>
 # C:\Program Files\ImageJ\ <Windows>
 # Linux always needs to specify the path to ImageJ. For example, path = "~/ImageJ/"
 
-\donttest{
-# the traget directory that contains example image files
+# the target directory that contains example image files
 set.directory <- eximg()
 
 # run without displaying analyzed images
@@ -92,7 +91,6 @@ auto.run(set.directory=set.directory, log=TRUE, check.image=FALSE)
 set.directory <- eximg()
 # run with displaying analyzed images. Press any keys when you finish cheking analyzed images."
 auto.run(set.directory=set.directory, log=TRUE, check.image=TRUE)
-}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
