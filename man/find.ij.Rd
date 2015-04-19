@@ -1,5 +1,5 @@
-\name{findimagej}
-\alias{findimagej}
+\name{find.ij}
+\alias{find.ij}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Checking a path to ImageJ}
@@ -7,7 +7,7 @@ Checking a path to ImageJ}
 Check if ImageJ is installed in the correct directory.
 }
 \usage{
-findimagej(ostype = .Platform$OS.type)
+find.ij(ostype = .Platform$OS.type)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,7 +17,11 @@ The Operating system types.
 }
 
 \value{
-A path for ImageJ applicatoin. On unix this will always be "/Applications/ImageJ/". On Windows this will always be "C:\\Program Files\\ImageJ\\". 
+A path for ImageJ application. On unix this will always be "/Applications/ImageJ/". On Windows this will always be "C:\\Program Files\\ImageJ\\". 
+}
+
+\details{
+When ImageJ is not installed in the common location, users need to specify the path to ImageJ in \code{\link{run.ij}}.	
 }
 
 \author{

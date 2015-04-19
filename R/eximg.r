@@ -7,13 +7,13 @@ imagedir <- gsub("/","\\\\",imagedir)
 
 
 bat <- paste("cd ",imagedir,
-            "\n copy A1-01.jpeg ",temp,"\\A1-01.jepg 
-            copy A1-02.jpeg ",temp,"\\A1-02.jepg
-            copy A2.jpeg ",temp,"\\A2.jepg
-            copy A123-01.jpeg ",temp,"\\A123-01.jepg
-            copy A123-02.jpeg ",temp,"\\A123-02.jepg
-            copy A300-1.jpeg ",temp,"\\A300-2.jepg
-            copy A300-2.jpeg ",temp,"\\A300-1.jepg"
+            "\n copy A1-01.jpeg ",temp,"\\A1-01.jpeg 
+            copy A1-02.jpeg ",temp,"\\A1-02.jpeg
+            copy A2.jpeg ",temp,"\\A2.jpeg
+            copy A123-01.jpeg ",temp,"\\A123-01.jpeg
+            copy A123-02.jpeg ",temp,"\\A123-02.jpeg
+            copy A300-1.jpeg ",temp,"\\A300-2.jpeg
+            copy A300-2.jpeg ",temp,"\\A300-1.jpeg"
 ,sep="")
 
 

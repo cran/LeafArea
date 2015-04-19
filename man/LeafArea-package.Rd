@@ -3,19 +3,25 @@
 \alias{LeafArea}
 \docType{package}
 \title{
-LeafArea: A rapid digital image analysis for leaf area
+LeafArea: Rapid digital image analysis of leaf area
 }
 \description{
-The package LeafArea allows one to conveniently run IMAGEJ software within R. Functions in this package analyze multiple leaf images in the target directory and generate multiple data frame objects that include leaf area from each leaf image, and then process and combine these data frame objectes into a single data frame in a format that is convenient for subsequent analyses. The package provides a user-friendly, automated tool for measuring leaf area from digital images. For more information on ImageJ, see the ImageJ User Guide, which is available \url{http://imagej.nih.gov/ij/}.
+The package LeafArea allows one to conveniently run ImageJ software within R. The package provides a user-friendly, automated tool for measuring leaf area from digital images. For more information on ImageJ, see the ImageJ User Guide, which is available \url{http://imagej.nih.gov/ij/}.
 }
+
 \details{
+ The key function in this package is \code{\link{run.ij}}, which analyzes multiple leaf images in the target directory and generates multiple data frame objects that include leaf area from each leaf image, and then processes and combines these data frame objects into a single data frame object that is convenient for subsequent analyses.
+
+ If ImageJ fails to recognize leaf images, users can manually guide the image analysis for particular images through ImageJ GUI (See the ImageJ user guide 30.1 Measure...[m], \url{http://imagej.nih.gov/ij/docs/guide/user-guide.pdf}). The results for these manually-analyzed images will still be handled by the file management function \code{\link{resmerge.ij}}.
+
 \tabular{ll}{
 Package: \tab LeafArea\cr
 Type: \tab Package\cr
-Version: \tab 0.0.6\cr
-Date: \tab 2015-03-06\cr
+Version: \tab 0.1.0\cr
+Date: \tab 2015-04-19\cr
 License: \tab GPL-2\cr
 }
+
 }
 \author{
 Masatoshi Katabuchi <mattocci27@gmail.com>

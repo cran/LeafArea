@@ -4,7 +4,7 @@
 \title{
 Utility function}
 \description{
-Exports sample image files to R temprary directory and returns a path to the sample image files. This function is only used in the example of auto.run. See also \code{\link{auto.run}}.
+Exports sample image files to R temporary directory and returns a path to the sample image files. This function is only used in the example of \code{\link{run.ij}}.
 }
 \usage{
 eximg()
@@ -19,7 +19,7 @@ Masatoshi Katabuchi <mattocci27@gmail.com>}
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 \seealso{
-\code{\link{auto.run}} 
+\code{\link{run.ij}} 
 }
 
 % Add one or more standard keywords, see file 'KEYWORDS' in the
