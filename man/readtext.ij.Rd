@@ -33,11 +33,15 @@ Masatoshi Katabuchi <mattocci27@gmail.com>}
 \code{\link{resmerge.ij}}
  }
 \examples{
+#prepare example files
 data(leafdata)
 tf <- paste(tempdir(),"/",sep="")
-for (i in 1:6){
+for (i in 1:7){
 	write.table(leafdata[[i]],paste(tf,names(leafdata)[i],sep=""),sep="\t")
 }
+
+#list of files
+list.files(tf)
 
 readtext.ij(tf)
 

@@ -7,7 +7,7 @@ Automated leaf area analysis}
 Analyzes leaf area in the target directory automatically, and returns a data frame that contains sample names in the first column and total leaf area (cm2) of the sample (e.g., one individual plant or one ramet) in the second column. Note that run.ij does not count the number of leaves in each image; therefore if the user requires the number of leaves per image, the user must record these values.
 }
 \usage{
-run.ij(path.imagej = NULL, set.memory = 8, set.directory, distance.pixel = 826,
+run.ij(path.imagej = NULL, set.memory = 4, set.directory, distance.pixel = 826,
  known.distance = 21, trim.pixel = 20, low.circ = 0, upper.circ = 1,
   low.size = 0.7, upper.size = "Infinity", prefix = "\\\\.|-",log=F,
   check.image=F,save.image=F)
@@ -16,13 +16,13 @@ run.ij(path.imagej = NULL, set.memory = 8, set.directory, distance.pixel = 826,
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{path.imagej}{
-Path to ImageJ. Deafult uses C:\\Program Files\\ImageJ\\ for Windows, and /Applications/ImageJ/ for Mac. Linux always needs to specify the path to ImageJ.
+Path to ImageJ. Deafult uses C:/Program Files/ImageJ for Windows, and /Applications/ImageJ for Mac. Linux always needs to specify the path to ImageJ.
 }
   \item{set.memory}{
-Set memory (GB) for image analysis (default = 8). 
+Set memory (GB) for image analysis (default = 4). 
 }
   \item{set.directory}{
-Set directory that contains leaf images. For example, when the directory is on desktop of Mac, the path can be specified as: set.directory ='~/Desktop/'. For Windows: set.directory='..\\Desktop\\'. No default. The path to the target directory that contains leaf images should always be specified.
+Set directory that contains leaf images. For example, when the directory named 'leaf_data' is on desktop of Mac, the path can be specified as: set.directory ='~/Desktop/leaf_data'. For Windows: set.directory='C:/Users/<users name>/Desktop/leaf_data'. No default. The path to the target directory that contains leaf images should always be specified. Note that spaces in file or direcotry names are not allowed.  
 }
   \item{distance.pixel}{
 Number of pixels for the known distance. When leaf images were captured in A4 image size with 100 ppi, the pixel density is roughly equal to 826 pixels per 21 cm. In this case, the calibration scale can be specified as distance.pixel = 826, known.distance =21. 
@@ -56,7 +56,7 @@ Regular expression to manage file names. The run.ij combines the leaf area of al
 Should mean leaf areas of each single image kept? (defalt = FALSE)
 }
  \item{check.image}{
-Whether to disply analyzed images by using ImageJ software (defalt = FALSE). When you choose check.image = TRUE, press any keys to close ImageJ. Note that when check.image = TRUE, the analysis would take considerable time.}
+Whether to disply analyzed images by using ImageJ software (defalt = FALSE). When you choose check.image = TRUE, press any keys to close ImageJ. Note that when check.image = TRUE, the analysis would take considerable time. Note this option may only work on R console.}
 
  \item{save.image}{
 Whether to save analyzed images (defalt = FALSE).}
@@ -89,23 +89,21 @@ Masatoshi Katabuchi <mattocci27@gmail.com>}
 \examples{
 # As long as ImageJ application is installed in the following directory,
 # you do not have to specify the path to ImageJ
-# /Applications/ImageJ/ <Mac>
-# C:\Program Files\ImageJ\ <Windows>
-# Linux always needs to specify the path to ImageJ. For example, path = "~/ImageJ/"
+# /Applications/ImageJ <Mac>
+# C:/Program Files/ImageJ <Windows>
+# Linux always needs to specify the path to ImageJ. For example, path = "~/ImageJ"
 
-# the target directory that contains example image files
-set.directory <- eximg()
+# prepare the target directory that contains example image files
+ex.dir <- eximg()
+list.files(ex.dir)
 
-# run with displaying analyzed images. Press any keys when you finish cheking analyzed images."
-run.ij(set.directory=set.directory, check.image=TRUE)
+#run automated images analysis
+run.ij(set.directory = ex.dir, save.image=TRUE)
 
-
-# the target directory that contains example image files
-set.directory <- eximg()
-
-#run without displaying analyzed images
-run.ij(set.directory=set.directory, check.image=FALSE)
-
+# note: in this example, analyzed images are exported to a temporary 
+# directory, which will be eventually deleted. 
+# If you choose your home directory as the target directory, 
+# analyzed images will be exported to it.
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
