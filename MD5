@@ -1,7 +1,7 @@
-1008182ccbe845c44a837f0157f482f8 *DESCRIPTION
+addbade18eb440a252cf9474a6546303 *DESCRIPTION
 cf4b81a42c5f9b0406405bfed43e0586 *NAMESPACE
 105aee8411744369fe98e77b46d99136 *R/eximg.r
-2c1dad0e8941757288d7d63da1a89eb3 *R/find.ij.R
+b271718b0dde8cbc43d28c3e031b48f2 *R/find.ij.R
 1051ed87fd6722c083afceb9ef2bf98b *R/readtext.ij.R
 66f4b14aba6aecdd843814ba06458cb8 *R/resmerge.ij.R
 f1c20c3f6d0a213d919ce597cf4c6303 *R/run.ij.R
@@ -13,15 +13,10 @@ f29320df5c88f787de13fba026715e9f *inst/images/A123-02.jpeg
 5a4fe28260ba46ec0382af1db9b46252 *inst/images/A2.jpeg
 70255993e1cdcabeb4d686c16558564a *inst/images/A300-1.jpeg
 4a37f0152a1ba7ac9b99e8d5a4bc58d9 *inst/images/A300-2.jpeg
-71f62115a6742796ebb9a5d27582766c *man/LeafArea-package.Rd
+bbd706ec29a7518c576b1f66e4b7f79b *man/LeafArea-package.Rd
 8b246807211d8b1181b3f413a4f1de71 *man/eximg.Rd
 d85e04d6878928ebc92c43e7052d86df *man/find.ij.Rd
 5c9206e2fc15869d31d05bbfe4b29b2b *man/leafdata.rd
 0b8be4f9453688618a97c1362fd20426 *man/readtext.ij.Rd
 e6b48870e277dd9a63164d4ce1420b04 *man/resmerge.ij.Rd
 c0db412b83491c455810da5daffd1600 *man/run.ij.Rd
-d2c3833149e5514e83619579094ccdae *vignettes/Fig1_final.png
-0e7b3673e24fd8b3af3bde8e5b7de205 *vignettes/Fig2_final.png
-56b17c494cca839bb2beb209345ef29d *vignettes/circ.png
-e968b77567f348b6e6b6cb08e9a50125 *vignettes/size.png
-b7f651fc9217f73aa26b6b215625e66f *vignettes/trim.png
