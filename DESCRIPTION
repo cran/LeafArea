@@ -1,8 +1,8 @@
 Package: LeafArea
 Type: Package
 Title: Rapid Digital Image Analysis of Leaf Area
-Version: 0.1.7
-Date: 2017-03-09
+Version: 0.1.8
+Date: 2019-07-03
 Author: Masatoshi Katabuchi <mattocci27@gmail.com>
 Maintainer: Masatoshi Katabuchi <mattocci27@gmail.com>
 Description: An interface for the image processing program 'ImageJ', which
@@ -16,8 +16,8 @@ SystemRequirements: ImageJ (>=1.48), ij.jar (see
 License: GPL-2
 BugReports: https://github.com/mattocci27/LeafArea/issues
 URL: https://github.com/mattocci27/LeafArea
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2017-03-09 23:55:15 UTC; mattocci
+Packaged: 2019-07-03 08:33:49 UTC; mattocci
 Repository: CRAN
-Date/Publication: 2017-03-10 08:12:33
+Date/Publication: 2019-07-03 09:01:43 UTC
